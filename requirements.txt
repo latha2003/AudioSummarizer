@@ -2,7 +2,4 @@ streamlit
 speechrecognition
 pydub
 google-generativeai
-fpdf
 googletrans==4.0.0-rc1
-smtplib
-email
