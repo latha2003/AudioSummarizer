@@ -17,9 +17,9 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+EMAIL_ADDRESS = st.secrets["EMAIL_ADDRESS"]
+EMAIL_PASSWORD = st.secrets["EMAIL_PASSWORD"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 
 # Configure Gemini API securely
 generative_ai.configure(api_key=GEMINI_API_KEY)
