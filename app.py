@@ -3,7 +3,6 @@ import speech_recognition as sr
 import tempfile
 import google.generativeai as generative_ai
 from pydub import AudioSegment
-from fpdf import FPDF
 from googletrans import Translator  # Import Google Translator for language translation
 
 import smtplib
